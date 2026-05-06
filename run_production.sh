@@ -1,6 +1,5 @@
 killall python3
 
-find -type d -exec chmod 750 {} \;
-find -type f -exec chmod 640 {} \;
+python3 -m pip install -r requirements.txt
 
 FLASK_ENV=production nohup python3 app.py &

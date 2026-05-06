@@ -1,21 +1,20 @@
-EpLogic
-=======
+# HLA Eplet Analyzer
 
-Scripts for Anti-HLA antibody target prediction via machine learning.
+This web application provides both a browser interface and a web service for predicting anti-HLA antibody targets at the eplet level using Machine Learning.
 
-Description
------------
-These datasets comprise mismatched eplets from HLA alleles tested in single antigen panels of patients waiting for a solid organ transplantation. The experiments described here have the aim of classifying each eplet/panel/patient as reactive or non-reactive. Tip: reactive eplets usually have greater MFI values.
+## Experiments
 
-Experiments
------------
+The datasets comprise mismatched eplets from HLA alleles tested on single-antigen bead panels. The experiments evaluate classification of each eplet–panel pair into low- and high-reactivity categories.
 
-* Simple train/test validation. 89% accuracy and 88% AUC-ROC.
-* Cross-validation. 88% accuracy and 92% AUC-ROC.
-* Cross-validation & feature selection. 89% accuracy and 94% AUC-ROC.
-* Cross-validation & feature selection & hyperparameter tuning. 91% accuracy and 94% AUC-ROC.
+* Basic validation: 89% accuracy and 88% AUC-ROC.
+* Rwgular cross-validation: 88% accuracy and 92% AUC-ROC.
+* Cross-validation w/ feature selection: 89% accuracy and 94% AUC-ROC.
+* Cross-validation w/ feature selection / hyperparameter tuning: 91% accuracy and 94% AUC-ROC.
 
-Support
--------
+## Instructions
+
+This is a standard Python application. Run `sh run_development.sh`, then open [http://localhost:5000](http://localhost:5000).
+
+## Support
 
 You can contact me at mariomarroquim@gmail.com.

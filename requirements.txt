@@ -1,3 +1,5 @@
+flask
+imbalanced-learn
+pandas
 scikit-learn
 waitress
-flask
