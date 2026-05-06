@@ -11,13 +11,18 @@ from sklearn.ensemble          import RandomForestClassifier
 from sklearn.model_selection   import RandomizedSearchCV
 from joblib                    import dump, load
 
-eplogic = load('notebooks/eplogic.joblib')
+# TODO: Generate your preferred model and save it as a joblib file.
+# eplogic = load('notebooks/eplogic.joblib')
 
 app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
 def index():
   return render_template('index.html')
+
+@app.route("/version", methods=['GET'])
+def version():
+  return "2026-05-05"
 
 @app.route("/predict", methods=['GET', 'POST'])
 def predict():
@@ -42,7 +47,7 @@ def predict():
     response.mimetype = 'application/json'
     return response
   except:
-    return "Please, verify if all parameters (eplet_locus, eplet_allele_qtd, eplet_min_mfi, eplet_max_mfi, panel_nc, panel_pc) are present and contain valid values.", 500
+    return "Please verify that all parameters (eplet_locus, eplet_allele_qtd, eplet_min_mfi, eplet_max_mfi, panel_nc, panel_pc) are present and contain valid values.", 500
 
 if __name__ == "__main__":
   #app.run(host='0.0.0.0', port=5000, threaded=True)
