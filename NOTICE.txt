@@ -1,0 +1,24 @@
+Research-Use-Only Policy and Non-Endorsement Disclaimer
+
+1. Research Use Only (RUO)
+This project is intended primarily for research and academic purposes. It has
+not been cleared or approved by any regulatory authority for clinical diagnostic
+use or for medical decision-making.
+
+2. Non-Endorsement and Commercial Use
+This project is made available for commercial use under the terms of the MIT
+License. However, inclusion of this project, in whole or in part, in any
+commercial product, service, or distribution does not constitute endorsement,
+certification, or warranty of that product, service, or distribution by the
+author(s). Use of the name(s) of the author(s), or of any associated research
+institution(s), to promote or imply affiliation with any commercial offering is
+strictly prohibited without express written permission.
+
+3. Disclaimer of Liability and Validation
+This project is provided "AS IS," without warranty of any kind. The author(s)
+shall not be liable for any claim, damage, or other liability, whether in
+contract, tort, or otherwise, arising from, out of, or in connection with the
+project. This includes, but is not limited to, any claim regarding the accuracy
+of results or clinical outcomes obtained through use of this project. Users are
+solely responsible for independently validating and verifying any results
+derived from this project before applying them in any setting.
