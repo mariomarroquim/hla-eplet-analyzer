@@ -11,8 +11,7 @@ from sklearn.ensemble          import RandomForestClassifier
 from sklearn.model_selection   import RandomizedSearchCV
 from joblib                    import dump, load
 
-# TODO: Generate your preferred model and save it as a joblib file.
-# eplogic = load('notebooks/eplogic.joblib')
+model = load('./model.joblib')
 
 app = Flask(__name__)
 
@@ -38,8 +37,8 @@ def predict():
                    int(request.args.get('eplet_max_mfi'))]]
 
 
-    results = eplogic.predict(eplet_data)
-    probabilities = eplogic.predict_proba(eplet_data)
+    results = model.predict(eplet_data)
+    probabilities = model.predict_proba(eplet_data)
 
     predictions = jsonify(label=str(results[0]), score0=str(probabilities[0][0]), score1=str(probabilities[0][1]))
 
@@ -50,5 +49,5 @@ def predict():
     return "Please verify that all parameters (eplet_locus, eplet_allele_qtd, eplet_min_mfi, eplet_max_mfi, panel_nc, panel_pc) are present and contain valid values.", 500
 
 if __name__ == "__main__":
-  #app.run(host='0.0.0.0', port=5000, threaded=True)
+  # app.run(host='0.0.0.0', port=5000, threaded=True)
   serve(app, host='0.0.0.0', port=80, threads=4)

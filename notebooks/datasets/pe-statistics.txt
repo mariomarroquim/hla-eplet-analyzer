@@ -1,1 +1,0 @@
-Patients: 314; Panels: 550; Eplets: 81399.
