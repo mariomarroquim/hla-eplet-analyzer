@@ -21,7 +21,7 @@ def index():
 
 @app.route("/version", methods=['GET'])
 def version():
-  return "2026-05-05"
+  return "2026-05-09"
 
 @app.route("/predict", methods=['GET', 'POST'])
 def predict():
