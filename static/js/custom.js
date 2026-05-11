@@ -3,7 +3,7 @@ $(document).ready(function(){
     event.preventDefault();
 
     $("#eplet_locus").val("abc").change();
-    $("#eplet_allele_qtd").val("17");
+    $("#eplet_allele_count").val("17");
     $("#eplet_min_mfi").val("509");
     $("#eplet_max_mfi").val("12000");
     $("#panel_nc").val("102");

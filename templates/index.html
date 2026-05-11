@@ -67,8 +67,8 @@
             </div>
 
             <div class="pure-u-1-2">
-              <label for="eplet_allele_qtd">Allele quantity</label>
-              <input type="number" min="0" step="1" id="eplet_allele_qtd" name="eplet_allele_qtd" class="pure-u-1"/>
+              <label for="eplet_allele_count">Allele quantity</label>
+              <input type="number" min="0" step="1" id="eplet_allele_count" name="eplet_allele_count" class="pure-u-1"/>
             </div>
           </div>
 
@@ -144,9 +144,9 @@
       <li>
         Input:
         <ul>
-          <li>Params: "eplet_locus", "eplet_allele_qtd", "eplet_min_mfi", "eplet_max_mfi", "panel_nc" and "panel_pc".</li>
+          <li>Params: "eplet_locus", "eplet_allele_count", "eplet_min_mfi", "eplet_max_mfi", "panel_nc" and "panel_pc".</li>
           <li>"eplet_locus" can be "abc", "drb", "dq" or "dp".</li>
-          <li>Complete URL example: <a href="/predict?eplet_locus=ABC&eplet_allele_qtd=17&eplet_min_mfi=509&eplet_max_mfi=12000&panel_nc=102&panel_pc=13200">click here</a>.</li>
+          <li>Complete URL example: <a href="/predict?eplet_locus=abc&eplet_allele_count=17&eplet_min_mfi=509&eplet_max_mfi=12000&panel_nc=102&panel_pc=13200">click here</a>.</li>
         </ul>
       </li>
 
@@ -163,14 +163,16 @@
   </div>
 
   <div class="footer">
-    <p>&copy; 2026 HLA Eplet Analyzer. All rights reserved. For research use only.</p>
+    <p>
+      &copy; 2026 HLA Eplet Analyzer. All rights reserved. For research use only.
 
-    <br/>
+      <br/>
 
-    <small>
-      Version: <b>2026-05-09</b>.
-      Support: <b><a href="mailto:mariomarroquim@gmail.com">mariomarroquim@gmail.com</a></b>.
-    </small>
+      <small>
+        Version: <b>2026-05-09</b>.
+        Support: <b><a href="mailto:mariomarroquim@gmail.com">mariomarroquim@gmail.com</a></b>.
+      </small>
+    </p>
   </div>
 
   <script type="text/javascript" defer="defer" src="{{url_for('static', filename='js/jquery_min.js')}}"></script>
